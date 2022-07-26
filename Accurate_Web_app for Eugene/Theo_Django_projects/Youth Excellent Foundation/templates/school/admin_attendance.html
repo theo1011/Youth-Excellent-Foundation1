@@ -1,0 +1,133 @@
+{% extends 'school/adminbase.html' %}
+
+
+
+{% block content %}
+
+<head>
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+
+</head>
+
+
+<!--
+written By : Theo Tshabalala
+facebook : Theo Neycott Barca Tshabalala 
+-->
+
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h6 class="panel-title">Attendance</h6>
+
+      </div>
+
+      <table class="table table-hover" id="dev-table">
+        <thead>
+
+          <tr>
+            <th>Class Name</th>
+            <th>Take Attendance</th>
+            <th>View Attendance</th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td> Physical Sciences</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'admin-take-attendance' 'Physical Sciences'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-attendance' 'Physical Sciences'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Life Sciences</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'admin-take-attendance' 'Life Sciences'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-attendance' 'Life Sciences'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> History</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'admin-take-attendance' 'History'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-attendance' 'History'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Geography</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'admin-take-attendance' 'Geography'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-attendance' 'Geography'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Consumer Studies</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'admin-take-attendance' 'Consumer Studies'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-attendance' 'Consumer Studies'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Business Studies</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'admin-take-attendance' 'Business Studies'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-attendance' 'Business Studies'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td>  Mathematics Pure</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'admin-take-attendance' 'Mathematics Pure'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-attendance' 'Mathematics Pure'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Accounting</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'admin-take-attendance' 'Accounting'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-attendance' 'Accounting'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Coding</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'admin-take-attendance' 'Coding'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-attendance' 'Coding'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Maths Literacy</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'admin-take-attendance' 'Maths Literacy'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-attendance' 'Maths Literacy'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+      </table>
+    </div>
+
+
+  </div>
+</div>
+
+
+<!--
+      written By : Theo Tshabalala     facebook : Theo Neycott Barca Tshabalala 
+      -->
+
+
+{% endblock content %}
